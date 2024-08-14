@@ -14,11 +14,7 @@ license = "MIT"
 homepage = "https://github.com/phip1611/spectrum-analyzer"
 repository = "https://github.com/phip1611/spectrum-analyzer"
 documentation = "https://docs.rs/spectrum-analyzer"
-exclude = [
-    "res",
-    "test",
-    ".github"
-]
+exclude = ["res", "test", ".github"]
 
 [[bench]]
 name = "fft_spectrum_bench"
@@ -38,10 +34,10 @@ minimp3 = "0.5.1"
 # visualize spectrum in tests and examples
 audio-visualizer = "0.4.0"
 # get audio input in examples
-cpal = "0.15.2"
+cpal = { version = "0.15.2", default-features = false }
 # audio data buffering
 ringbuffer = "0.15.0"
-rand = "0.8.5" # for benchmark
+rand = "0.8.5"        # for benchmark
 # exit in examples
 ctrlc = "~3.3.1" # locked because of repo MSRV
 # for benchmark
